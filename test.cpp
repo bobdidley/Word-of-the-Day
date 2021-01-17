@@ -11,7 +11,7 @@ int main() {
     if(wordList.is_open())
         std::cout << "Open file" << std::endl;
     std::string word;
-    for(int i = 0; i < 50; ++i) {
+    for(int i = 0; i < 560; ++i) {
         // extracts then discards
         wordList.ignore();
 
@@ -22,7 +22,7 @@ int main() {
     std::cout << word;
 
     // opens website using word extracted from file
-    system(("open https://www.merriam-webster.com/" + word).c_str());
+    system(("open https://www.merriam-webster.com/dictionary/" + word).c_str());
 
     return 0;
 }
