@@ -63,8 +63,10 @@ bool WordLookUp :: isNewWord(std::string newWord) {
     return isNew;
 }
 
-void WordLookUp :: searchDetails(std::string w) {
+void WordLookUp :: searchDetails(std::string searchWord) {
+    std::string URL("https://www.merriam-webster.com/dictionary/" + searchWord);
 
+    system(("open " + URL).c_str()); // access to website
 }
 
 std::string WordLookUp :: getWord() const {

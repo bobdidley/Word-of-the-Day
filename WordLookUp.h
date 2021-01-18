@@ -16,6 +16,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <curl/curl.h>
 
 
 class WordLookUp {

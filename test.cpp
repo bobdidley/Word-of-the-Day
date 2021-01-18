@@ -13,6 +13,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <curl/curl.h>
 
 int main() {
     // TEST
@@ -35,6 +36,9 @@ int main() {
 
     // opens website using word extracted from file
     system(("open https://www.merriam-webster.com/dictionary/" + word).c_str());
+
+    // curl test:
+    CURL * curl;
 
     return 0;
 }
